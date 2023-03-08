@@ -62,7 +62,7 @@ jobs:
       - name: 'Run bats tests'
         env:
           FROM_CLI: true
-        shell: sh
+          NO_COLOR: true
         run: |
           npx bats $GITHUB_WORKSPACE/tests/runme/getting-started.bats
       
